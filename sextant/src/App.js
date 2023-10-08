@@ -3,6 +3,7 @@ import './App.css';
 import Heading from './components/Heading';
 import Child from './components/Child';
 import Adress from './components/Adress';
+import BackendConn from './BackendConn';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
      </Child>
      <Child name="IPv6 Adress">
         <Adress url='https://api64.ipify.org?format=json'/>
+     </Child>
+     <Child name="Plyon Latency">
+       <BackendConn />
      </Child>
     </div>
   );
